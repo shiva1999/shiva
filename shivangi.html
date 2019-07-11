@@ -22,18 +22,15 @@
 <table style="width:70%;border:2px solid black;">
   <tr>
     <th style="border:2px solid black;">Name</th>
-    <th style="border:2px solid black;">Mail</th> 
+    <th style="border:2px solid black;">Mail</th>
+    <th style="border:2px solid black;">Phone No.</th>
   </tr>
 <tbody id="table_body" style="border:2px solid black;">
   </tbody>
 </table>
 
 </body>
-<style>
-    .tr{
-        border: 1px solid black;
-    }
-</style>
+
 <script>
 $(document).ready(function(){
   var rootRef= firebase.database().ref().child("users");
@@ -41,13 +38,19 @@ $(document).ready(function(){
           
   var name= snap.child("name").val();
   var email=snap.child("email").val();
+  var phone=snap.child("phone").val();     
          
-        $("#table_body").append("<tr><td>" + name +"</td><td>" + email +"</td><td>" +"</td></tr>"); 
+        $("#table_body").append("<tr><td>" + name +"</td><td>" + email +"</td><td>" + phone +"</td></tr>"); 
 });
-
 
 
 });
 
 </script>
+    
+<style>
+    .tr{
+        border: 1px solid black;
+    }
+</style>
 </html>

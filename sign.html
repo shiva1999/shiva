@@ -1,0 +1,147 @@
+<html>
+<head>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<style>
+ .subscribe{
+         background-color: burlywood;
+         height: 99%;
+         width: 99.5%;
+         border: 5px dotted darkcyan;
+         background-size: cover;
+         font-size: 30px;
+         font-family: cursive;
+         color: #500000;
+     }
+     .inside{
+         border: 5px dotted darkcyan;
+         margin-top: 5%;
+         margin-left: 22%;
+         margin-right: 22%;
+         margin-bottom: 5%;
+     }
+     .form{
+         margin-top: 5%;
+         margin-right: 10%;
+         margin-left: 10%;
+         font-size: 25px;
+     }
+     .line{
+         margin-left: 10%;
+     }
+    
+     .detail{
+         margin-bottom: 3px;
+         font-size: 15px;
+     }
+     .button{
+         border: 3px solid gray; 
+         margin-top: 5%; 
+         height: 7%; 
+         width: 18%; 
+     }
+    </style>
+    <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase.js"></script>
+   
+    <script>
+    // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDMRqD-7w4AeXhVLbgoxTV-Z6yyvh3pkpI",
+    authDomain: "major-ac19d.firebaseapp.com",
+    databaseURL: "https://major-ac19d.firebaseio.com",
+    projectId: "majorp-f8dfe",
+    storageBucket: "major-ac19d.appspot.com",
+    messagingSenderId: "876433013745"
+  };
+  firebase.initializeApp(config);
+ </script> 
+ 
+    <script>
+    function submit(){
+    var name= document.getElementById('name').value;
+    var x=document.getElementById('email').value;  
+    var atposition=x.indexOf("@");  
+    var dotposition=x.lastIndexOf(".");  
+    var phone= document.getElementById('phone').value;
+        console.log(name);
+    if(name=="" || x=="" || phone=="")
+       {
+         alert("Please fill up the details");
+       }
+    else if(name=="" || name=="null")
+        {
+            alert("Username is undefined");
+        }
+     else if(x=="")
+             {
+             alert("Please enter your email address");
+             }
+    else if (atposition<1 || dotposition<atposition+2 || dotposition+2>=x.length)
+       {  
+           alert("Please enter a valid e-mail address");    
+       } 
+    else if(phone=="")
+        {
+            alert("Please enter your phone number");
+        }
+    else if(phone.length< 10)
+    {
+      alert("Please enter a valid phone number");  
+    }
+    else
+        {
+     alert("Thank You" + name);
+    firebase.database().ref('users/').push({
+    "name": name,   
+    "email": x,
+    "phone": phone
+      });
+     }
+    }
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body>
+<div data-aos="fade-up">
+<div class="subscribe">
+    <div class="inside">
+    <a href="index.html">
+    <img src="cut1.png" style="float: right;"></a>
+        <div class="form">
+            <div data-aos="fade-down">
+            <div class="line">
+                <strong>Please enter your information below:</strong>
+            </div>  
+            </div>
+                    <div data-aos="zoom-in"> 
+                        <input type="hidden" name="action" value="subscribe">
+                        <table>
+                            <tr>
+                       <td style="font-size: 30px;"><label for="name">Name:</label></td>
+                       <td><input class="detail" value="" id="name" name="name" type="name"></td> 
+                        <br>
+                        </tr>
+                        <tr>
+                       <td style="font-size: 30px;"><label for="email">Email:</label></td>
+                       <td><input class="detail" value="" id="email" name="email" type="email"></td>
+                        <br>
+                        </tr>
+                        <tr>
+                        <td style="font-size: 30px;"><label for="phone">Phone No.:</label></td>
+                        <td><input class="detail" value="" id="phone" name="phone" type="text"></td>
+                        </tr>
+                       </table>
+                        <div>
+                             <center><input value="Thanks!" class="button" type="submit" onclick="submit()"></center>
+                        </div>
+                    </div>  
+        </div>
+    </div>
+</div>
+</div>
+</body>
+<script>
+  AOS.init({
+     duration:1600,
+  });
+</script>
+</html>

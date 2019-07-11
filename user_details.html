@@ -24,7 +24,7 @@
 <table style="width:70%;border:2px solid black;">
   <tr>
     <th style="border:2px solid black;">Name</th>
-    <th style="border:2px solid black;">Comment</th> 
+    <th style="border:2px solid black;">Message</th> 
   </tr>
 <tbody id="table_body" style="border:2px solid black;">
   </tbody>
@@ -33,7 +33,7 @@
 </body>
 <style>
     td{
-       border:2px solid black; 
+       border:1px solid blue; 
     }
 </style>
 <script>
@@ -42,9 +42,9 @@ $(document).ready(function(){
     rootRef.on("child_added",snap =>{
           
   var name= snap.child("name").val(); 
-  var comment =snap.child("comment").val();
+  var message =snap.child("message").val();
          
-        $("#table_body").append("<tr><td>" + name +"</td><td>" + comment +"</td></tr>"); 
+        $("#table_body").append("<tr><td>" + name +"</td><td>" + message +"</td></tr>"); 
 });
 
 
