@@ -92,9 +92,9 @@ input[type=submit]:hover {
     <script>
     function submit(){
     var name= document.getElementById('name').value;
-    var countryt= document.getElementById('country').value;
+    var country= document.getElementById('country').value;
     var message= document.getElementById('message').value;
-        console.log(comt);
+        console.log(country);
         if(name=="" || message=="")
             {
                 alert("Please fill the form");
@@ -118,7 +118,7 @@ input[type=submit]:hover {
             alert("Thank You!");
             firebase.database().ref('users/').push({
             "name": name,   
-            "comment": message 
+            "message": message 
       });
         }
     }
