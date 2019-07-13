@@ -95,12 +95,8 @@ input[type=submit]:hover {
     var country= document.getElementById('country').value;
     var message= document.getElementById('message').value;
         console.log(country);
-        if(name=="" || message=="")
-            {
-                alert("Please fill the form");
-            }
-        
-    else if(name=="" || name=="null")
+    
+     if(name=="" || name=="null")
         {
             alert("Username is undefined");
         }
@@ -111,14 +107,15 @@ input[type=submit]:hover {
        }  
     else if (message.length< 20)
         {
-            alert("Enter atleast 20 letters");
+            alert("Message should consists atleast 20 letters");
         }
     else
         {
             alert("Thank You!");
             firebase.database().ref('users/').push({
             "name": name,   
-            "message": message 
+            "message": message,
+            "country": country
       });
         }
     }
