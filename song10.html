@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>Telugu Songs</title>
+<script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.10.1/firebase.js"></script>
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyATvQR2DFNmlKELBT7GuDVYXp0GDnW5ZNk",
+    authDomain: "songs-54b95.firebaseapp.com",
+    databaseURL: "https://songs-54b95.firebaseio.com",
+    projectId: "songs-54b95",
+    storageBucket: "songs-54b95.appspot.com",
+    messagingSenderId: "794661180116",
+    appId: "1:794661180116:web:30435ae7a4abf6c4"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+<script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+ <script>
+     var arr= [];
+ firebase.database().ref('/category/telugu').once('value').then(function(snapshot) {
+     arr = Object.keys(snapshot.val());
+     for(var i=0;i<arr.length;i++)
+     {
+      var win= snapshot.val()[arr[i]];  
+         
+         document.getElementById('songs').innerHTML= document.getElementById('songs').innerHTML  + '<audio controls><source src= "' + snapshot.val()[arr[i]]+'" type="audio/mpeg"></audio>' +"<br>";
+     }
+ })
+    
+    </script>
+        </head>
+    <body>
+        <center><h1>Telugu Songs</h1></center>
+        <div id="songs">
+        </div>
+        
+        
+    </body>
+</html>

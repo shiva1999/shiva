@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>Romantic Songs</title>
+<script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.10.1/firebase.js"></script>
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyATvQR2DFNmlKELBT7GuDVYXp0GDnW5ZNk",
+    authDomain: "songs-54b95.firebaseapp.com",
+    databaseURL: "https://songs-54b95.firebaseio.com",
+    projectId: "songs-54b95",
+    storageBucket: "songs-54b95.appspot.com",
+    messagingSenderId: "794661180116",
+    appId: "1:794661180116:web:30435ae7a4abf6c4"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+<script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+ <script>
+     var arr= [];
+ firebase.database().ref('/category/romantic').once('value').then(function(snapshot) {
+     arr = Object.keys(snapshot.val());
+     for(var i=0;i<arr.length;i++)
+     {
+      var win= snapshot.val()[arr[i]];  
+         
+         document.getElementById('songs').innerHTML= document.getElementById('songs').innerHTML +  '<audio controls><source src= "' + snapshot.val()[arr[i]]+'" type="audio/mpeg"></audio><span>' + arr[i] +'</span>' +"<br><br>";
+     }
+ })
+    
+    </script>
+        <style>
+         body{
+             font-size: 20px;
+             font-family: cursive;
+         }
+        </style>
+        </head>
+    <body>
+        <center><h1>Romantic Songs</h1>
+        <div id="songs">
+        </div>
+        </center>
+        
+    </body>
+</html>
