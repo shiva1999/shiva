@@ -92,10 +92,15 @@ input[type=submit]:hover {
     <script>
     function submit(){
     var name= document.getElementById('name').value;
-    var cont= document.getElementById('country').value;
-    var comt= document.getElementById('comment').value;
+    var countryt= document.getElementById('country').value;
+    var message= document.getElementById('message').value;
         console.log(comt);
-    if(name=="" || name=="null")
+        if(name=="" || message=="")
+            {
+                alert("Please fill the form");
+            }
+        
+    else if(name=="" || name=="null")
         {
             alert("Username is undefined");
         }
@@ -104,7 +109,7 @@ input[type=submit]:hover {
        {  
            alert("Please choose your country name");    
        }  
-    else if (comt.length< 20)
+    else if (message.length< 20)
         {
             alert("Enter atleast 20 letters");
         }
@@ -113,7 +118,7 @@ input[type=submit]:hover {
             alert("Thank You!");
             firebase.database().ref('users/').push({
             "name": name,   
-            "comment": comt 
+            "comment": message 
       });
         }
     }
