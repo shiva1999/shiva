@@ -1,19 +1,19 @@
 <html>
 <head>
+<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <style>
  .subscribe{
-         background-color: burlywood;
+         background-color: white;
          height: 99%;
          width: 99.5%;
-         border: 5px dotted darkcyan;
          background-size: cover;
          font-size: 30px;
-         font-family: cursive;
-         color: #500000;
+         font-family: 'Raleway', sans-serif;
+         color: darkcyan;
      }
      .inside{
-         border: 5px dotted darkcyan;
+         border: 3px solid darkcyan;
          margin-top: 5%;
          margin-left: 22%;
          margin-right: 22%;
@@ -24,6 +24,7 @@
          margin-right: 10%;
          margin-left: 10%;
          font-size: 25px;
+         margin-bottom: 5%;
      }
      .line{
          margin-left: 10%;
@@ -32,13 +33,24 @@
      .detail{
          margin-bottom: 3px;
          font-size: 15px;
+         height: 30px;
+         width: 140%;
+         border-radius: 5%;
      }
      .button{
-         border: 3px solid gray; 
+         border: 3px solid darkcyan; 
          margin-top: 5%; 
          height: 7%; 
          width: 18%; 
      }
+    .button:hover{
+         border: 3px solid black; 
+         margin-top: 5%; 
+         height: 7%; 
+         width: 18%;
+         background-color: darkcyan;
+         font-size: 20px;
+    }
     </style>
     <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase.js"></script>
    
@@ -126,7 +138,7 @@
                         <br>
                         </tr>
                         <tr>
-                        <td style="font-size: 30px;"><label for="phone">Phone No.:</label></td>
+                        <td style="font-size: 30px;"><label for="phone">Phone No.:&nbsp;&nbsp;&nbsp;</label></td>
                         <td><input class="detail" value="" id="phone" name="phone" type="text"></td>
                         </tr>
                        </table>

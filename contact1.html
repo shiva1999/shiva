@@ -2,20 +2,20 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <style media="screen">
     body{
-        border: 5px solid black;
+        border: 5px solid #009688;
+        font-family: 'Raleway', sans-serif;
     }
     p{
-        font-size: 40px;
+        font-size: 20px;
     }    
-h3{
-       font-family:Brush Script MT, Brush Script Std, cursive; 
-       color: deeppink;
-       font-size: 50px;
+h3{ 
+       color: black;
+       font-size: 40px;
     }
 
 input[type=text], select, textarea {
@@ -42,6 +42,7 @@ input[type=submit] {
 
 input[type=submit]:hover {
   background-color: deeppink;
+  font-size: 20px;
 }
 
 .container {
@@ -49,7 +50,7 @@ input[type=submit]:hover {
   background-color:white;
   padding-left: 1.5%;
   padding-right: 1.5%;
-  padding-top: 5px;
+  padding-top: 15px;
   padding-bottom: 200px;
   margin-top: 10px;
   margin-bottom: 50px;
@@ -57,12 +58,12 @@ input[type=submit]:hover {
   margin-right: 17%;  
   width: 62%;
   height: 225px;
+  border: 5px solid black;
 }
 
     .details{
-        background-color: #00001a;
-        font-family: 'Tangerine', serif;
-        font-size: 40px;
+        background-color: #009688;
+        font-size: 30px;
         padding-left: 4%;
         padding-right: 4%;
         padding-top: 20px;
@@ -92,11 +93,10 @@ input[type=submit]:hover {
     <script>
     function submit(){
     var name= document.getElementById('name').value;
-    var country= document.getElementById('country').value;
-    var message= document.getElementById('message').value;
-        console.log(country);
-    
-     if(name=="" || name=="null")
+    var cont= document.getElementById('country').value;
+    var comt= document.getElementById('message').value;
+        console.log(message);
+    if(name=="" || name=="null")
         {
             alert("Username is undefined");
         }
@@ -107,15 +107,14 @@ input[type=submit]:hover {
        }  
     else if (message.length< 20)
         {
-            alert("Message should consists atleast 20 letters");
+            alert("Enter atleast 20 letters");
         }
     else
         {
             alert("Thank You!");
             firebase.database().ref('users/').push({
             "name": name,   
-            "message": message,
-            "country": country
+            "message": message 
       });
         }
     }
@@ -153,12 +152,12 @@ input[type=submit]:hover {
  </div>
         </div>
         <div data-aos="fade-up">
-<p style="font-size: 50px; color: antiquewhite;">Please use the contact form above to contact us regarding any questions you might have! We are here to help!
+<p style="font-size: 30px; color: antiquewhite;">Please use the contact form above to contact us regarding any questions you might have! We are here to help!
 <br>If you fill out the form above with all of your relevant information, a member of our team will contact you as soon as possible, and in no more than 1-2 business days.<br>
 You can also call us at <u>0141-454-8150</u>.<br>
-       <div style="font-family: cursive; font-size: 40px; color: antiquewhite;">
+       <div style="font-size: 40px; color: antiquewhite;">
            Our Customer Care hours are Monday-Friday 6AM-6 PM.
-        <a href="index.html" style="float: right; color: red; font-size: 25px;">Home</a>
+        <a href="index.html" style="float: right; color: black; font-size: 25px; text-decoration: none;">&#8811;&nbsp;Home</a>
            </div>
      </div>   
     </div>     
