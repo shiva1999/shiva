@@ -1,0 +1,298 @@
+<html>
+<head>
+<title>MY MUSIC COLLECTION</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">    
+</head>
+ <style>  
+     
+       body{
+           background-color: white;
+           margin: 10px;
+           background-image: url(https://media.giphy.com/media/U3qYN8S0j3bpK/giphy.gif);
+           width: 98.5%;
+           height: 100%;
+        }
+    
+       bg {
+           position: fixed; 
+           top: 0; 
+        }
+
+       .too{
+           width:1329;
+           height:10px;
+           position: fixed;
+           top: -15px;
+           z-index:99;
+       }
+      .myslides{
+         margin-top: 90px;
+       }
+       .aboutinner{
+            background-image: url(mp26.jpg);
+            opacity: 45%;
+            border: 1px solid white;
+            height: 500px;
+            width: 100%;
+            
+        }
+        .about-content{
+            background-color: cyan;
+            border:1px solid pink;
+            height: 300px;
+            width: 55%;
+            margin-top: 110px;
+            margin-left: 70px;
+        }
+        .bdr{
+            border: 1px dotted grey;
+            height: 250px;
+            width: 93%;
+            margin: 15px;
+            padding: 10px;
+        }
+        .links{
+            width: 100px;
+            height: 25px;  
+            background-color: darkgray;
+            color: white;
+            padding: 5px;
+        }
+      .romantic{
+            background-image: url(mp8.jpg);
+            float: none;
+            margin-left: 32px;
+            margin-right: 32px;
+        }
+        .old{
+            background-image: url(mp9.jpg);
+            float: right;
+            margin-left: 32px;
+        }
+        .sad{
+            background-image: url(mp13.jpg);
+            float: left;
+            margin-right: 32px;
+            margin-left: 0px;
+         }
+     .party{
+         background-image: url(mp14.jpg);
+         float: left;
+         margin-right: 32px;
+         margin-left: 0px;
+     }
+     .patriotic{
+         background-image: url(mp15.jpg);
+         float: right;
+         margin-left: 32px;
+     }
+     .instrumental{
+            background-image: url(mp20.jpg);
+            float: none;
+            margin-left: 32px;
+            margin-right: 32px;
+     }
+     .punjabi{
+         background-image: url(mp21.jpg);
+         float: right;
+         margin-left: 32px;
+     }
+     .telugu{
+         background-image: url(mp18.jpg);
+         float: left;
+         margin-right: 32px;
+         margin-left: 0px;            
+     }
+     .english{
+            background-image: url(mp19.jpg);
+            float: none;
+            margin-left: 32px;
+            margin-right: 32px;
+     }
+        .romantic, .sad, .old, .party, .patriotic, .punjabi, .telugu, .instrumental, .english{
+            display: inline-block;
+            text-align: center;
+            height: 470px;
+            width: 30%;
+            margin-top: 3px;
+            border: 1px solid white;
+            color: white;
+        }
+        .block{
+            height: 1500px;
+            width: 100%;
+        }
+     .subscribe{
+         background-image: url(mp27.jpg);
+         height: 300px;
+         width: 100%;
+         border: 5px dotted gray;
+     }
+     .inside{
+         border: 5px dotted gray;
+         margin-top: 30px;
+         margin-left: 170px;
+         margin-right: 170px;
+         margin-bottom: 50px;
+     }
+     .form{
+         margin-top: 20px;
+         margin-right: 40px;
+         margin-left: 40px;
+         margin-bottom: 20px;
+     }
+     .line{
+         margin-left: 90px;
+     }
+     .info{
+         margin: 20px;
+     }
+    </style>
+<body>
+    <div class="main">
+        <div class="slides">
+     <div class="too">
+      <center>
+       <h1 style="background-color:floralwhite; font-family: 'Tangerine', serif; font-size: 50px; color: blue;"><b>Music-The Sound Of Heart</b></h1>
+      </center>
+     </div>
+<!........ SLIDE SHOW.......>
+<section>
+ <center>
+  <img class="mySlides" src="mp1.jpg" id="bg" style="width:100%; height:640px">
+  <img class="mySlides" src="mp2.jpg" id="bg" style="width:100%; height:640px">
+  <img class="mySlides" src="mp4.jpg" id="bg" style="width:100%; height:640px">
+  <img class="mySlides" src="mp6.jpg" id="bg" style="width:100%; height:640px">
+ </center>
+</section>
+
+<!.............Automatic Slideshow - change image every 3 seconds.............>
+<script>
+var myIndex = 0;
+show();
+function show() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(show, 3000);
+}
+</script>
+         </div>   </div>
+    <br><br>
+ <div class="aboutinner">
+        <div class="about-content">
+            <div class="bdr">
+                <center><h2 style="color: gray; font-size: 30px;">Songs that keeps us alive</h2></center>
+                <p style="align-content: space-around; color: gray; font-size: 20px;">
+                Music is the wine that fills the cup of silence. It is a form of art. It is an expression of emotions through harmonic frequencies. It is the best healer of every wound.Music is a part of everyone's life.<br>
+                Stay connected and enjoy the music.</p>
+                <center><div class="links"><a href="about-us">ABOUT US</a></div></center>
+             </div>
+        </div>
+    </div>
+   
+<div class="Block">
+<ul>
+<li class="sad">
+<div class="songs">
+<h3>Dainty Designs <br>for Little Ladies</h3>
+<div class="listen-btn"><a href=#>SAD SONGS</a></div>
+</div>
+</li>
+    
+<li class="romantic">
+<div class="songs">
+<h3>Feel the <br>magic of love</h3>
+<div class="listen-btn"><a href=romantic.html>ROMANTIC SONGS</a></div>
+</div>
+</li>
+
+<li class="old">
+<div class="songs">
+<h3>Refined Style<br>for Every Woman</h3>
+<div class="listen-btn"><a href=#>OLD SONGS</a></div>
+</div>
+</li>
+ 
+  </ul>
+    <ul>
+ <li class="party">
+<div class="songs">
+<h3>Refined Style<br>for Every Woman</h3>
+<div class="listen-btn"><a href=#>PARTY SONGS</a></div>
+</div>
+</li>   
+  
+<li class="patriotic">
+<div class="songs">
+<h3>Refined Style<br>for Every Woman</h3>
+<div class="listen-btn"><a href=#>PATRIOTIC SONGS</a></div>
+</div>
+</li>
+    
+<li class="instrumental">
+<div class="songs">
+<h3>Refined Style<br>for Every Woman</h3>
+<div class="listen-btn"><a href=#>INSTRUMENTAL SONGS</a></div>
+</div>
+</li>
+</ul>
+<ul>
+<li class="punjabi">
+<div class="songs">
+<h3>Refined Style<br>for Every Woman</h3>
+<div class="listen-btn"><a href=#>PUNJABI SONGS</a></div>
+</div>
+</li>
+    
+<li class="english">
+<div class="songs">
+<h3>Refined Style<br>for Every Woman</h3>
+<div class="listen-btn"><a href=#>ENGLISH SONGS</a></div>
+</div>
+</li>
+    
+<li class="telugu">
+<div class="songs">
+<h3>Refined Style<br>for Every Woman</h3>
+<div class="listen-btn"><a href=#>TELUGU SONGS</a></div>
+</div>
+</li>
+</ul>
+</div>
+  <hr>  
+    
+    
+    
+<div class="subscribe">
+    <div class="inside">
+        <div class="form">
+            <center><h4>Sign up </h4></center>
+            <div class="line">
+                <strong>Please enter your information below:</strong>
+                <form action=# method="post" id="subscribe_form" class="subscribe_form" name="subscribe_form">
+                    <input type="hidden" name="action" value="subscribe" />
+                    <div class="info">
+                       <label for="first_name">Name</label>
+                       <input class="detail" value="" id="name" name="name" type="name" /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                       <label for="email">Email</label>
+                       <input class="detail" value="" id="email" name="email" type="email" />
+                       <div style="border: 3px solid gray; margin-top: 40px; height: 35px; width: 83px; margin-left: 270px;">
+                             <input value="Thanks!" class="btn" type="submit" />
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+    </body>
+</html>
