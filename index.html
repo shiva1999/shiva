@@ -1,164 +1,186 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Parallax Template - Materialize</title>
+<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    
+body{
+  background-size: 100% 100%;
+  font-family: 'Raleway', sans-serif;
+}
 
-  <!-- CSS  -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+ .button{
+        border: 2px solid #009688;
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 26px;
+        cursor: pointer;
+        margin-top: 45px;
+        background-color: #009688;
+    }
+    
+.button:hover{
+        border: 3px solid #009688;
+        color: #009688;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 30px;
+        cursor: pointer;
+        margin-top: 45px;
+        background-color: #00968800; 
+        font-weight: bold;
+    }
+.parallax {
+  /* Full height */
+  height: 100%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #00000000;
+}
+
+li {
+  float: right;
+  
+}
+
+li a {
+  display: block;
+  color: #00bfa5;
+  text-align: center;
+  padding: 10px 14px;
+  text-decoration: none;
+  border: 2px solid #009688;
+  margin: 5px;
+}
+
+li a:hover {
+  background-color: #009688;
+  color: white;
+}
+
+.nav{
+    opacity: 0.7;
+    font-weight: bold;
+    font-size: 25px;
+    }
+</style>
 </head>
 <body>
-  <nav class="white" role="navigation">
-    <div class="nav-wrapper container">
-      <a id="logo-container" href="#" class="brand-logo">Logo</a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="#">Navbar Link</a></li>
-      </ul>
 
-      <ul id="nav-mobile" class="sidenav">
-        <li><a href="#">Navbar Link</a></li>
-      </ul>
-      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-    </div>
-  </nav>
+<div class="nav">
+<ul>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">Sign-up</a></li>
+</ul>
+</div>
+    
+    
+<div class="parallax" style="background-image: url('mmp13.jpg'); height: 550px;margin-top: -70px;">
+   <center><p style="color: #009688; font-size: 80px; margin-top: 70px;background-color: black; opacity: 0.6; display: inline-block; 
+       font-weight: bolder;">HEART BEATS</p>
+    <p style="color: #26a69a; font-size:40px; margin-top: -10px;background-color:black; opacity: 0.5; display: inline-block;font-weight: bold;">Music is the piece of art that goes in ears straight to heart.</p><br>
+    <a href="new1.html" class="button" >Welcome</a>
+    </center> 
+</div>
 
-  <div id="index-banner" class="parallax-container">
-    <div class="section no-pad-bot">
-      <div class="container">
-        <br><br>
-        <h1 class="header center teal-text text-lighten-2">Parallax Template</h1>
-        <div class="row center">
-          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
-        </div>
-        <div class="row center">
-          <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Get Started</a>
-        </div>
-        <br><br>
-
-      </div>
-    </div>
-    <div class="parallax"><img src="mp28.jpg" alt="Unsplashed background img 1"></div>
-  </div>
-
-
-  <div class="container">
-    <div class="section">
-
-      <!--   Icon Section   -->
-      <div class="row">
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">flash_on</i></h2>
-            <h5 class="center">Speeds up development</h5>
-
-            <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
+<div style="height:450px;background-color:white;font-size:20px; margin-top: 140px;">
+            <div class="row" style="width: 100%; margin: 50px;text-align: justify;">
+                <div class="column" style="float: left; height: 420px; width: 20%;margin: 30px 0px;">
+                <center><img src="mmp25.png" style="height:100px; width:100px;"></center>
+                <p>Get notified about the latest released songs.<br>Just sign-up to our website and enjoy the latest songs for completely free.</p>
+                </div>
+                <div class="column" style="float: left; height: 420px; width: 20%;margin: 30px;">
+                <center><img src="mmp23.png" style="height:100px;width:100px;"></center>
+                <p>A user-friendly website made for all your moods, sad, romantic, energitic,etc where user can not only enjoy the music online but can also download it for free.</p>
+                </div>
+                <div class="column" style="float: left; height: 420px; width: 20%;margin: 30px;">
+                <center><img src="mmp26.png" style="height:100px;width:100px;"></center>
+                    <p>India's Top ranked* musical website with a huge collection of latest as well as evergreen songs of high quality.</p>
+               </div> 
+                <div class="column" style="float: left; height: 420px; width: 20%;">
+                <center><img src="mmp24.png" style="height:100px;width:100px;margin: 20px 0px;"></center>
+                    <p>No matter where you are, access the musical world from anywhere anytime.</p>
+               </div> 
           </div>
-        </div>
+</div>
 
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">group</i></h2>
-            <h5 class="center">User Experience Focused</h5>
+<div class="parallax"></div>
+    
+<div class="parallax" style=" background-image: url('mp28.jpg'); height: 600px;"></div>
 
-            <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.</p>
-          </div>
-        </div>
+<div data-aos="fade-down" style="background-color:white; font-size:20px; margin: 15px 75px;">
+  <center><h2 style="font-size: 40px;">About Us</h2></center>
+   <p style="text-align: justify;">Our website is rated in top 10 music websites all over India.It contains a huge collection of hit songs of all the time in different languages. The songs according to the mood are also available.5 million Bollywood, English, Hindi, and Indian regional songs, top artists for any mood or genre. Even exclusive releases also. <br>You do not need internet/mobile data connection always to listen songs. You can download all your favourites to play in Offline Mode!<br>
+   Music is the part of everyone's life. From childhood sing-a-long songs, to garage grunge music, and everything in between music is everywhere.I love listening to music and it’s become one of my hobbies since I’m in my primary school. I cannot recall a time when music was not a part of my life. Whether I was singing in a choir, jamming out to the radio in my car with the windows rolled down, or simply listening to music while studying, music has had a huge impact on who I have grown up to be and I would never want to change that. Listening music has helped me become the person I am by being a release for my anger, broadening my future and make new friends.<br>
+   So Being a music lover I know the value of music in a person's life. And this is the reason that made me create this website which has all varieties of music collection with the option of downloading the song which will be available to you anytime.</p>
+    <span class="highlight no-br">All for free.</span>
 
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">settings</i></h2>
-            <h5 class="center">Easy to work with</h5>
+</div>
 
-            <p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
-          </div>
-        </div>
-      </div>
+<div class="parallax"></div>
+    
+<div class="parallax" style=" background-image: url('mp1.jpg'); height: 600px;"></div>
+    
+<div class="parallax" style="height: 900px; font-size:26px;">    
+<div style=" background-color: #009688; height: 420px;">
+<h5>Company Bio</h5>
+<p>We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+</div>    
 
+<div class="row" style="width: 100%; margin: 15px; text-align: justify; background-color: white; height: 480px;">
+    <div class="column" style="float: left; height: 180px; width: 23%;margin: 30px 0px;">
+        <center><img src="mmp32.png" style="height:150px; width:150px;"></center>
     </div>
-  </div>
-
-
-  <div class="parallax-container valign-wrapper">
-    <div class="section no-pad-bot">
-      <div class="container">
-        <div class="row center">
-          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
-        </div>
-      </div>
+    <div class="column" style="float: left; height: 180px; width: 23%;margin: 30px 0px;">
+        <center><img src="mmp33.png" style="height:150px; width:150px;"></center>
     </div>
-    <div class="parallax"><img src="mp28.jpg" alt="Unsplashed background img 2"></div>
-  </div>
-
-  <div class="container">
-    <div class="section">
-
-      <div class="row">
-        <div class="col s12 center">
-          <h3><i class="mdi-content-send brown-text"></i></h3>
-          <h4>Contact Us</h4>
-          <p class="left-align light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. Morbi sem neque, posuere et pretium eget, bibendum sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu mattis nisl maximus sed. Nulla imperdiet semper molestie. Morbi massa odio, condimentum sed ipsum ac, gravida ultrices erat. Nullam eget dignissim mauris, non tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
-        </div>
-      </div>
-
+    <div class="column" style="float: left; height: 180px; width: 23%;margin: 30px 0px;">
+        <center><img src="mmp34.png" style="height:150px; width:150px;"></center>
     </div>
-  </div>
-
-
-  <div class="parallax-container valign-wrapper">
-    <div class="section no-pad-bot">
-      <div class="container">
-        <div class="row center">
-          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
-        </div>
-      </div>
+    <div class="column" style="float: right; height: 180px; width: 23%;margin: 30px 0px;">
+        <center><img src="mmp39.png" style="height:150px; width:150px;"></center>
     </div>
-    <div class="parallax"><img src="mp28.jpg" alt="Unsplashed background img 3"></div>
-  </div>
-
-  <footer class="page-footer teal">
-    <div class="container">
-      <div class="row">
-        <div class="col l6 s12">
-          <h5 class="white-text">Company Bio</h5>
-          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
-
-
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Settings</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
-          </ul>
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Connect</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
-          </ul>
-        </div>
-      </div>
+    <div class="column" style="float: left; height: 180px; width: 23%;margin: 30px 0px;">
+        <center><img src="mmp36.png" style="height:150px; width:150px;"></center>
     </div>
-    <div class="footer-copyright">
-      <div class="container">
-      Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
-      </div>
+    <div class="column" style="float: left; height: 180px; width: 23%;margin: 30px 0px;">
+        <center><img src="mmp40.png" style="height:150px; width:150px;"></center>
     </div>
-  </footer>
+    <div class="column" style="float: left; height: 180px; width: 23%;margin: 30px 0px;">
+        <center><img src="mmp38.jpg" style="height:150px; width:150px;"></center>
+    </div>
+    <div class="column" style="float: right; height: 180px; width: 23%;margin: 30px 0px;">
+        <center><img src="mmp35.png" style="height:150px; width:150px;"></center>
+    </div>
+</div>
+       
+</div> 
 
+</body>
+<script>
+  AOS.init({
+     duration:1600,
+  });
+</script>
 
-  <!--  Scripts-->
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="js/materialize.js"></script>
-  <script src="js/init.js"></script>
-
-  </body>
 </html>
