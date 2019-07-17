@@ -26,11 +26,17 @@
      {
       var win= snapshot.val()[arr[i]];  
          
-         document.getElementById('songs').innerHTML= document.getElementById('songs').innerHTML  + '<audio controls><source src= "' + snapshot.val()[arr[i]]+'" type="audio/mpeg"></audio>' +"<br>";
+         document.getElementById('songs').innerHTML = document.getElementById('songs').innerHTML + '<audio controls><source src= "' + snapshot.val()[arr[i]]+'" type="audio/mpeg"></audio><span>' + arr[i] +'</span>'  +"<br><br>";
      }
  })
     
     </script>
+     <style>
+         body{
+             font-size: 20px;
+             font-family: cursive;
+         }
+        </style> 
         </head>
     <body>
         <center><h1>Instrumental Songs</h1></center>

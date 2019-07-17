@@ -1,0 +1,31 @@
+<html>
+<head>
+
+</head>
+    <body>
+    
+   <h1><center>Admin Login</center></h1>
+   USERNAME:<br>
+   <input type=" text" placeholder="username" id="Enter your name" ><br><br>
+   PASSWORD:<br>
+   <input type=" password" id="password" placeholder="Enter your password"><br><br>
+   EMAIL:<br>
+    <input type="email" id="gmail" placeholder="Enter your mail id"><br><br><br>
+    <input type="submit" onclick="check()">
+    </body>
+<script>
+    function check(){
+    var username= document.getElementById('username').value;
+    var password= document.getElementById('password').value;
+    var mail= document.getElementById('gmail').value;
+     if(username== 'shivangi' && password=='shiva' && mail=='shubhangi8877@gmail.com') 
+         {
+             window.open('user_details.html');
+         }
+      else
+         {
+             alert("user unknown");
+         }  
+            
+    </script>
+</html>

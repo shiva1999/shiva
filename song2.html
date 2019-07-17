@@ -26,8 +26,7 @@
      {
       var win= snapshot.val()[arr[i]];  
          
-         document.getElementById('songs').innerHTML = document.getElementById('songs').innerHTML + '<audio controls><source src= "' + snapshot.val()[arr[i]]+'" type="audio/mpeg"></audio><span>' + arr[i] +'</span>'  +"<br><br>";
-         
+         document.getElementById('songs').innerHTML = document.getElementById('songs').innerHTML + '<audio controls><source src= "' + snapshot.val()[arr[i]]+'" type="audio/mpeg"></audio><span>' + arr[i] +'</span>'  +"<br><br>";   
      }
       
  })
@@ -44,7 +43,6 @@
             <h1>Patriotic Songs</h1></center>
         <div id="songs" style="">
         </div>
-        
-        
+           
     </body>
 </html>
