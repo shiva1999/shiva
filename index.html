@@ -50,7 +50,7 @@ body{
   margin: 0;
 }
 
-ul {
+ ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -86,7 +86,7 @@ li a:hover {
     .row{
         width: 100%; margin: 50px;text-align: justify;
     }
-    .column1, .column4{
+    .column9, .column4{
         float: left; height: 420px; width: 20%;margin: 30px 0px;
     }
     .column2, .column3{
@@ -119,22 +119,86 @@ li a:hover {
     .img3{
         height:150px; width:150px;
     }
-@media only screen and (max-width:500px) {
+    .parallax{
+         height: 600px; 
+    }
+   .para{
+       color: #009688; font-size: 80px; margin-top: 70px;background-color: black; opacity: 0.6; display: inline-block; font-weight: bolder;
+    }
+    .para2{
+        color: #26a69a; font-size:40px; margin-top: -10px;background-color:black; opacity: 0.5; display: inline-block;font-weight: bold;
+    }
+@media only screen and (max-width:620px) {
     
+    .button{
+        border: 2px solid #009688;
+        color: white;
+        padding: 8px 16px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 20px;
+        cursor: pointer;
+        margin-top: 45px;
+        background-color: #009688;
+    }
+    
+.button:hover{
+        border: 3px solid #009688;
+        color: #009688;
+        padding: 8px 16px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 25px;
+        cursor: pointer;
+        margin-top: 45px;
+        background-color: #00968800; 
+        font-weight: bold;
+    }
+li a {
+  display: block;
+  color: #00bfa5;
+  text-align: center;
+  padding: 6px 10px;
+  text-decoration: none;
+  border: 2px solid #009688;
+  margin-top: 3px;
+  margin-bottom: 7px;
+  margin-left: 3px;
+  margin-right: 3px;
+}
+
+li a:hover {
+  background-color: #009688;
+  color: white;
+}
+
+    .nav{
+    opacity: 0.7;
+    font-weight: bold;
+    font-size: 15px;
+    }
+    .para{
+       color: #009688; font-size: 60px; margin-top: 70px;background-color: black; opacity: 0.6; display: inline-block; font-weight: bolder;
+    }
+    .para2{
+        color: #26a69a; font-size:25px; margin-top: -10px;background-color:black; opacity: 0.5; display: inline-block;font-weight: bold;
+    }
     .row{
-       width: 100%; margin: 20px;text-align: justify; 
+       width: 100%; margin: 15px; text-align: justify; height: 600px;
     }
-    .column1, .column4{
-        float: left; height: 450px; width: 20%;margin: 20px 0px;
+    .column9, .column3{
+        float: left; height: 280px; width: 40%;margin: 20px 10px;
     }
-    .column2, .column3{
-        float: left; height: 450px; width: 20%;margin: 20px 20px;
+    .column4, .column2{
+        float: right; height: 280px; width: 40%;margin: 20px 10px;
     }
     .about{
-        background-color:white; font-size:20px; margin: 15px 15px;
+        background-color:white; font-size:20px; margin: 15px 15px; height: 330px;
     }
     .row1{
-        width: 100%; margin: 10px; text-align: justify; background-color: white; height: 400px;
+        width: 100%; margin: 20px; text-align: justify; background-color: white; height: 400px;
     }
     .column1{
         float: left; height: 130px; width: 19%;margin: 20px 0px;
@@ -143,22 +207,50 @@ li a:hover {
         float: right; height: 130px; width: 19%;margin: 20px 0px;
     }
     .column{
-      float: left; height: 130px; width: 19%;margin: 20px 10px;  
+      float: left; height: 130px; width: 19%;margin: 20px 15px;  
     }
     .column11{
         float: right; height: 130px; width: 19%;margin: 20px 0px;
     } 
     .p2{
-        height:470px; background-color:white; font-size:15px; margin-top: 140px;
+        height:240px; background-color:white; font-size:15px; margin-top: 80px;
     } 
     .p4{
-        height: 410px; font-size:15px; width: 100%;
+        height: 335px; font-size:15px; width: 100%;
     }
     .img2{
-        height:100px; width:100px;
+        height:80px; width:80px;
     }
     .img3{
         height:120px; width:120px;
+    }
+    .parallax{
+         height: 400px; 
+    }
+    }
+    
+    @media (min-width: 621px) and (max-width:1181px){
+        
+     .row1{
+        width: 100%; margin: 20px; text-align: justify; background-color: white; height: 400px;
+    }
+    .column1{
+        float: left; height: 130px; width: 19%;margin: 20px 0px;
+    }
+    .column6{
+        float: right; height: 130px; width: 19%;margin: 20px 0px;
+    }
+    .column{
+      float: left; height: 130px; width: 19%;margin: 20px 15px;  
+    }
+    .column11{
+        float: right; height: 130px; width: 19%;margin: 20px 0px;
+    } 
+    .p4{
+        height: 335px; font-size:15px; width: 100%;
+    }
+    .img3{
+        height:100px; width:100px;
     }
     }
 </style>
@@ -172,38 +264,38 @@ li a:hover {
 </ul>
 </div>
        
-<div class="parallax" style="background-image: url('mmp13.jpg'); height: 550px;margin-top: -70px;">
-   <center><p style="color: #009688; font-size: 80px; margin-top: 70px;background-color: black; opacity: 0.6; display: inline-block; 
-       font-weight: bolder;">HEART BEATS</p>
-    <p style="color: #26a69a; font-size:40px; margin-top: -10px;background-color:black; opacity: 0.5; display: inline-block;font-weight: bold;">Music is the piece of art that goes in ears straight to heart.</p><br>
-    <a href="new1.html" class="button" >Welcome</a>
-    </center> 
+<div class="parallax" style="background-image: url('mmp13.jpg');margin-top: -70px; width: 100%;">
+   <center>
+       <p class="para">HEART BEATS</p>
+       <p class="para2">Music is the piece of art that goes in ears straight to heart.</p><br>
+       <a href="new1.html" class="button" >Welcome</a>
+   </center> 
 </div>
 
 <div class="p2">
-            <div class="row">
-                <div class="column1">
-                <center><img src="mmp25.png" class="img2"></center>
+    <div class="row">
+        <div class="column9">
+            <center><img src="mmp25.png" class="img2"></center>
                 <p>Get notified about the latest released songs.<br>Just sign-up to our website and enjoy the latest songs for completely free.</p>
-                </div>
-                <div class="column2">
-                <center><img src="mmp23.png" class="img2"></center>
+        </div>
+        <div class="column2">
+            <center><img src="mmp23.png" class="img2"></center>
                 <p>A user-friendly website made for all your moods, sad, romantic, energitic,etc where user can not only enjoy the music online but can also download it for free.</p>
-                </div>
-                <div class="column3">
-                <center><img src="mmp26.png" class="img2"></center>
+        </div>
+        <div class="column3">
+            <center><img src="mmp26.png" class="img2"></center>
                     <p>India's Top ranked* musical website with a huge collection of latest as well as evergreen songs of high quality.</p>
-               </div> 
-                <div class="column4">
-                <center><img src="mmp24.png" class="img2"></center>
+        </div> 
+        <div class="column4">
+            <center><img src="mmp24.png" class="img2"></center>
                     <p>No matter where you are, access the musical world from anywhere anytime.</p>
-               </div> 
-          </div>
+        </div> 
+    </div>
 </div>
 
 <div class="parallax"></div>
     
-<div class="parallax" style=" background-image: url('mp28.jpg'); height: 600px;"></div>
+<div class="parallax" style=" background-image: url('mp28.jpg'); width: 100%;"></div>
 
 <div class="about" data-aos="fade-down">
   <center><h2 style="font-size: 40px;">About Us</h2></center>
@@ -216,9 +308,8 @@ li a:hover {
 
 <div class="parallax"></div>
     
-<div class="parallax" style=" background-image: url('mp1.jpg'); height: 600px;"></div>
-    
-<div class="parallax">    
+<div class="parallax" style=" background-image: url('mp1.jpg');width: 100%;"></div>
+       
 <div class="p4">
 <div class="row1">
     <div class="column1">
@@ -253,8 +344,6 @@ li a:hover {
     <p style="font-size:25px;">All rights reserved by &reg; HEART BEATS</p>
 </center>
 </div>    
-      
-</div> 
 
 </body>
 <script>
