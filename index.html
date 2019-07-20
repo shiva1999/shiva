@@ -78,10 +78,88 @@ li a:hover {
   color: white;
 }
 
-.nav{
+    .nav{
     opacity: 0.7;
     font-weight: bold;
     font-size: 25px;
+    }
+    .row{
+        width: 100%; margin: 50px;text-align: justify;
+    }
+    .column1, .column4{
+        float: left; height: 420px; width: 20%;margin: 30px 0px;
+    }
+    .column2, .column3{
+        float: left; height: 420px; width: 20%;margin: 30px 30px;
+    }
+    .about{
+        background-color:white; font-size:20px; margin: 15px 75px;
+    }
+    .row1{
+        width: 100%; margin: 15px; text-align: justify; background-color: white; height: 480px;
+    }
+    .column1{
+        float: left; height: 180px; width: 23%;margin: 30px 0px;
+    }
+    .column11, .column6{
+        float: right; height: 180px; width: 23%;margin: 30px 0px;
+    }
+    .column{
+       float: left; height: 180px; width: 23%;margin: 30px 15px; 
+    }
+    .p2{
+        height:450px;background-color:white;font-size:20px; margin-top: 140px;
+    }  
+    .p4{
+        height: 550px; font-size:26px; width: 100%;
+    }
+    .img2{
+        height:100px; width:100px;
+    }
+    .img3{
+        height:150px; width:150px;
+    }
+@media only screen and (max-width:500px) {
+    
+    .row{
+       width: 100%; margin: 20px;text-align: justify; 
+    }
+    .column1, .column4{
+        float: left; height: 450px; width: 20%;margin: 20px 0px;
+    }
+    .column2, .column3{
+        float: left; height: 450px; width: 20%;margin: 20px 20px;
+    }
+    .about{
+        background-color:white; font-size:20px; margin: 15px 15px;
+    }
+    .row1{
+        width: 100%; margin: 10px; text-align: justify; background-color: white; height: 400px;
+    }
+    .column1{
+        float: left; height: 130px; width: 19%;margin: 20px 0px;
+    }
+    .column6{
+        float: right; height: 130px; width: 19%;margin: 20px 0px;
+    }
+    .column{
+      float: left; height: 130px; width: 19%;margin: 20px 10px;  
+    }
+    .column11{
+        float: right; height: 130px; width: 19%;margin: 20px 0px;
+    } 
+    .p2{
+        height:470px; background-color:white; font-size:15px; margin-top: 140px;
+    } 
+    .p4{
+        height: 410px; font-size:15px; width: 100%;
+    }
+    .img2{
+        height:100px; width:100px;
+    }
+    .img3{
+        height:120px; width:120px;
+    }
     }
 </style>
 </head>
@@ -93,8 +171,7 @@ li a:hover {
   <li><a href="sign.html">Sign-up</a></li>
 </ul>
 </div>
-    
-    
+       
 <div class="parallax" style="background-image: url('mmp13.jpg'); height: 550px;margin-top: -70px;">
    <center><p style="color: #009688; font-size: 80px; margin-top: 70px;background-color: black; opacity: 0.6; display: inline-block; 
        font-weight: bolder;">HEART BEATS</p>
@@ -103,22 +180,22 @@ li a:hover {
     </center> 
 </div>
 
-<div style="height:450px;background-color:white;font-size:20px; margin-top: 140px;">
-            <div class="row" style="width: 100%; margin: 50px;text-align: justify;">
-                <div class="column" style="float: left; height: 420px; width: 20%;margin: 30px 0px;">
-                <center><img src="mmp25.png" style="height:100px; width:100px;"></center>
+<div class="p2">
+            <div class="row">
+                <div class="column1">
+                <center><img src="mmp25.png" class="img2"></center>
                 <p>Get notified about the latest released songs.<br>Just sign-up to our website and enjoy the latest songs for completely free.</p>
                 </div>
-                <div class="column" style="float: left; height: 420px; width: 20%;margin: 30px;">
-                <center><img src="mmp23.png" style="height:100px;width:100px;"></center>
+                <div class="column2">
+                <center><img src="mmp23.png" class="img2"></center>
                 <p>A user-friendly website made for all your moods, sad, romantic, energitic,etc where user can not only enjoy the music online but can also download it for free.</p>
                 </div>
-                <div class="column" style="float: left; height: 420px; width: 20%;margin: 30px;">
-                <center><img src="mmp26.png" style="height:100px;width:100px;"></center>
+                <div class="column3">
+                <center><img src="mmp26.png" class="img2"></center>
                     <p>India's Top ranked* musical website with a huge collection of latest as well as evergreen songs of high quality.</p>
                </div> 
-                <div class="column" style="float: left; height: 420px; width: 20%;">
-                <center><img src="mmp24.png" style="height:100px;width:100px;margin: 20px 0px;"></center>
+                <div class="column4">
+                <center><img src="mmp24.png" class="img2"></center>
                     <p>No matter where you are, access the musical world from anywhere anytime.</p>
                </div> 
           </div>
@@ -128,7 +205,7 @@ li a:hover {
     
 <div class="parallax" style=" background-image: url('mp28.jpg'); height: 600px;"></div>
 
-<div data-aos="fade-down" style="background-color:white; font-size:20px; margin: 15px 75px;">
+<div class="about" data-aos="fade-down">
   <center><h2 style="font-size: 40px;">About Us</h2></center>
    <p style="text-align: justify;">Our website is rated in top 10 music websites all over India.It contains a huge collection of hit songs of all the time in different languages. The songs according to the mood are also available.5 million Bollywood, English, Hindi, and Indian regional songs, top artists for any mood or genre. Even exclusive releases also. <br>You do not need internet/mobile data connection always to listen songs. You can download all your favourites to play in Offline Mode!<br>
    Music is the part of everyone's life. From childhood sing-a-long songs, to garage grunge music, and everything in between music is everywhere.I love listening to music and it’s become one of my hobbies since I’m in my primary school. I cannot recall a time when music was not a part of my life. Whether I was singing in a choir, jamming out to the radio in my car with the windows rolled down, or simply listening to music while studying, music has had a huge impact on who I have grown up to be and I would never want to change that. Listening music has helped me become the person I am by being a release for my anger, broadening my future and make new friends.<br>
@@ -141,32 +218,33 @@ li a:hover {
     
 <div class="parallax" style=" background-image: url('mp1.jpg'); height: 600px;"></div>
     
-<div class="parallax" style="height: 550px; font-size:26px;">    
-
-<div class="row" style="width: 100%; margin: 15px; text-align: justify; background-color: white; height: 480px;">
-    <div class="column" style="float: left; height: 180px; width: 23%;margin: 30px 0px;">
-        <center><img src="mmp32.png" style="height:150px; width:150px;"></center>
+<div class="parallax">    
+<div class="p4">
+<div class="row1">
+    <div class="column1">
+        <center><img src="mmp32.png" class="img3"></center>
     </div>
-    <div class="column" style="float: left; height: 180px; width: 23%;margin: 30px 0px;">
-        <center><img src="mmp33.png" style="height:150px; width:150px;"></center>
+    <div class="column">
+        <center><img src="mmp33.png" class="img3"></center>
     </div>
-    <div class="column" style="float: left; height: 180px; width: 23%;margin: 30px 0px;">
-        <center><img src="mmp34.png" style="height:150px; width:150px;"></center>
+    <div class="column">
+        <center><img src="mmp34.png" class="img3"></center>
     </div>
-    <div class="column" style="float: right; height: 180px; width: 23%;margin: 30px 0px;">
-        <center><img src="mmp39.png" style="height:150px; width:150px;"></center>
+    <div class="column11">
+        <center><img src="mmp39.png" class="img3"></center>
     </div>
-    <div class="column" style="float: left; height: 180px; width: 23%;margin: 30px 0px;">
-        <center><img src="mmp36.png" style="height:150px; width:150px;"></center>
+    <div class="column">
+        <center><img src="mmp36.png" class="img3"></center>
     </div>
-    <div class="column" style="float: left; height: 180px; width: 23%;margin: 30px 0px;">
-        <center><img src="mmp40.png" style="height:150px; width:150px;"></center>
+    <div class="column">
+        <center><img src="mmp40.png" class="img3"></center>
     </div>
-    <div class="column" style="float: left; height: 180px; width: 23%;margin: 30px 0px;">
-        <center><img src="mmp38.jpg" style="height:150px; width:150px;"></center>
+    <div class="column">
+        <center><img src="mmp38.jpg" class="img3"></center>
     </div>
-    <div class="column" style="float: right; height: 180px; width: 23%;margin: 30px 0px;">
-        <center><img src="mmp35.png" style="height:150px; width:150px;"></center>
+    <div class="column6">
+        <center><img src="mmp35.png" class="img3"></center>
+    </div>
     </div>
 </div>
  <div style=" height: 70px;">
