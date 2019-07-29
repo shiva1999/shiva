@@ -2,9 +2,10 @@
 <head>
 <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style media="screen">
  .subscribe{
-         background-color: black;
+         background-color: white;
          height: 600px;
          width: 99.5%;
          background-size: cover;
@@ -20,6 +21,9 @@
          margin-bottom: 50px;
          height: 400px;
      }
+    .td{
+        font-size: 30px;
+    }
      .form{
          margin-top: 5%;
          margin-right: 10%;
@@ -53,11 +57,11 @@
          font-size: 20px;
     }
 
-@media only screen and (max-width: 740px){
+@media(max-width: 540px){
         
         .subscribe{
          background-color: white;
-         height: 680px;
+         height: 380px;
          width: 99.5%;
          background-size: cover;
          font-size: 30px;
@@ -66,18 +70,76 @@
      }
      .inside{
          border: 3px solid darkcyan;
-         margin-top: 270px;
-         margin-left: 5%;
-         margin-right: 5%;
+         margin-top: 70px;
+         margin-left: 3%;
+         margin-right: 3%;
          margin-bottom: 30px;
-         width: 85%;
+         width: 94%;
          height: 300px; 
      }
      .form{
          margin-top: 5%;
-         margin-right: 10%;
+         margin-right: 8%;
+         margin-left: 8%;
+         font-size: 20px;
+         margin-bottom: 5%;
+     }
+      .td{
+        font-size: 20px;
+    }
+     .line{
          margin-left: 10%;
-         font-size: 25px;
+     }
+    
+     .detail{
+         margin-bottom: 3px;
+         font-size: 16px;
+         height: 25px;
+         width: 100%;
+         border-radius: 5%;
+     }
+     .button{
+         border: 3px solid darkcyan; 
+         margin-top: 5%; 
+         height: 7%; 
+         width: 23%; 
+     }
+    .button:hover{
+         border: 3px solid black; 
+         margin-top: 5%; 
+         height: 7%; 
+         width: 23%;
+         background-color: darkcyan;
+         font-size: 20px;
+    } 
+    }
+    @media (min-width:541px)and (max-width:940px){
+         .subscribe{
+         background-color: white;
+         height: 480px;
+         width: 99.5%;
+         background-size: cover;
+         font-size: 30px;
+         font-family: 'Raleway', sans-serif;
+         color: darkcyan;
+     }
+     .inside{
+         border: 3px solid darkcyan;
+         margin-top: 70px;
+         margin-left: 5%;
+         margin-right: 5%;
+         margin-bottom: 30px;
+         width: 90%;
+         height: 400px; 
+     }
+    .td{
+        font-size: 25px;
+    }
+     .form{
+         margin-top: 5%;
+         margin-right: 8%;
+         margin-left: 8%;
+         font-size: 20px;
          margin-bottom: 5%;
      }
      .line{
@@ -88,25 +150,24 @@
          margin-bottom: 3px;
          font-size: 15px;
          height: 30px;
-         width: 140%;
+         width: 120%;
          border-radius: 5%;
      }
      .button{
          border: 3px solid darkcyan; 
-         margin-top: 5%; 
-         height: 7%; 
-         width: 18%; 
+         margin-top: 15%; 
+         height: 8%; 
+         width: 23%; 
      }
     .button:hover{
          border: 3px solid black; 
          margin-top: 5%; 
          height: 7%; 
-         width: 18%;
+         width: 23%;
          background-color: darkcyan;
          font-size: 20px;
-    } 
     }
-    
+    }
     </style>
     <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase.js"></script>
    
@@ -184,17 +245,17 @@
                         <input type="hidden" name="action" value="subscribe">
                         <table>
                             <tr>
-                       <td style="font-size: 30px;"><label for="name">Name:</label></td>
+                       <td><label for="name">Name:</label></td>
                        <td><input class="detail" value="" id="name" name="name" type="name"></td> 
                         <br>
                         </tr>
                         <tr>
-                       <td style="font-size: 30px;"><label for="email">Email:</label></td>
+                       <td><label for="email">Email:</label></td>
                        <td><input class="detail" value="" id="email" name="email" type="email"></td>
                         <br>
                         </tr>
                         <tr>
-                        <td style="font-size: 30px;"><label for="phone">Phone No.:&nbsp;&nbsp;&nbsp;</label></td>
+                        <td><label for="phone">Phone No.:&nbsp;&nbsp;&nbsp;</label></td>
                         <td><input class="detail" value="" id="phone" name="phone" type="text"></td>
                         </tr>
                        </table>
