@@ -264,16 +264,17 @@ input[type=submit]:hover {
        {  
            alert("Please choose your country name");    
        }  
-    else if (message.length< 20)
+    else if (comt.length< 10)
         {
-            alert("Enter atleast 20 letters");
+            alert("Enter atleast 10 letters");
         }
+        
     else
         {
-            alert("Thank You!");
+            alert("Thank You " +name+"\n we will contact you shortly");
             firebase.database().ref('users/').push({
             "name": name,   
-            "message": message 
+            "message": comt 
       });
         }
     }

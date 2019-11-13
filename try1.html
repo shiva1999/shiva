@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>Sad Songs</title>
+<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+<script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.10.1/firebase.js"></script>
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyDT3lqk-1WINhAuMUmdTtS6JZBUE2P1z_Y",
+    authDomain: "try1-b1e89.firebaseapp.com",
+    databaseURL: "https://try1-b1e89.firebaseio.com/",
+    projectId: "try1-b1e89",
+    storageBucket: "try1-b1e89.appspot.com",
+    appId: "1:794661180116:web:30435ae7a4abf6c4"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+<script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+ <script>
+     var arr= [];
+ firebase.database().ref('/song/baby/image').once('value').then(function(snapshot) {
+    
+         document.getElementById('song').innerHTML = document.getElementById('song').innerHTML;
+
+ })
+    
+    </script>
+     <style>
+         body{
+             font-size: 20px;
+             font-family: 'Raleway', sans-serif;
+             background-color: darkcyan;
+         }
+         songs{
+             font-size: 25px;
+         }
+        </style> 
+        </head>
+    <body>
+        <center><h1>Sad Songs</h1></center>
+        <div id="songs">
+        </div>
+       
+        
+    </body>
+</html>

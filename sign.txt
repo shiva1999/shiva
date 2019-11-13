@@ -1,0 +1,54 @@
+
+    @media only screen and (max-width:1100px){
+        .subscribe{
+         background-color: white;
+         height: 530px;
+         width: 99.5%;
+         background-size: cover;
+         font-size: 30px;
+         font-family: 'Raleway', sans-serif;
+         color: darkcyan;
+     }
+     .inside{
+         border: 3px solid darkcyan;
+         margin-top: 50px;
+         margin-left: 15%;
+         margin-right: 15%;
+         margin-bottom: 40px;
+         width: 70%;
+         height: 430px; 
+     }
+     .form{
+         margin-top: 5%;
+         margin-right: 10%;
+         margin-left: 10%;
+         font-size: 25px;
+         margin-bottom: 5%;
+     }
+     .line{
+         margin-left: 10%;
+     }
+    
+     .detail{
+         margin-bottom: 3px;
+         font-size: 15px;
+         height: 30px;
+         width: 140%;
+         border-radius: 5%;
+     }
+     .button{
+         border: 3px solid darkcyan; 
+         margin-top: 5%; 
+         height: 7%; 
+         width: 18%; 
+     }
+    .button:hover{
+         border: 3px solid black; 
+         margin-top: 5%; 
+         height: 7%; 
+         width: 18%;
+         background-color: darkcyan;
+         font-size: 20px;
+    }
+    
+    }

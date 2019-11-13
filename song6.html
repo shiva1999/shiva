@@ -1,7 +1,6 @@
 <html>
     <head>
-        <title>English Songs</title>
-<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+        <title>Party Songs</title>
 <script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase.js"></script>
 <script>
@@ -21,29 +20,24 @@
 <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
  <script>
      var arr= [];
- firebase.database().ref('/category/english').once('value').then(function(snapshot) {
+ firebase.database().ref('/category/party').once('value').then(function(snapshot) {
      arr = Object.keys(snapshot.val());
      for(var i=0;i<arr.length;i++)
      {
       var win= snapshot.val()[arr[i]];  
-      var won= arr[i]; 
+        var won= arr[i]; 
        var wo= won.toUpperCase();
-        document.getElementById('songs').innerHTML= document.getElementById('songs').innerHTML + '</span><img src="https://firebasestorage.googleapis.com/v0/b/songs-54b95.appspot.com/o/e%2F' + arr [i] + '.jpg?alt=media&token=1a8a0976-1b04-4595-8a51-a9cd446cd2b3" width="200px" height="200px" />' +'<audio src= "' + snapshot.val()[arr[i]]+'" controls="controls" style="background-color: darkcyan; border-radius:80%;" type="audio/mpeg" ></audio><span>' + wo +"<br><br>";
+        document.getElementById('songs').innerHTML= document.getElementById('songs').innerHTML + '</span><img src="https://firebasestorage.googleapis.com/v0/b/songs-54b95.appspot.com/o/p%2F' + arr [i] + '.jpg?alt=media&token=1a8a0976-1b04-4595-8a51-a9cd446cd2b3" width="200px" height="200px" />' +'<audio src= "' + snapshot.val()[arr[i]]+'" controls="controls" style="background-color: darkcyan; border-radius:80%;" type="audio/mpeg" ></audio><span>' + wo +"<br><br>";
      }
  })
     
     </script>
-     <style>
-         body{
-             font-size: 20px;
-             font-family: 'Raleway', sans-serif;
-             background-color: darkcyan;
-         }
-        </style> 
         </head>
     <body>
-        <center><h1>English Songs</h1></center>
+        <center><h1>Party Songs</h1></center>
         <div id="songs">
         </div>
+        
+        
     </body>
 </html>
